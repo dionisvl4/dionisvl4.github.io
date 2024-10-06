@@ -1,95 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cute Cats</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <title>Beautiful One-Page Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap">
     <style>
         body {
+            font-family: 'Roboto', sans-serif;
             margin: 0;
-            font-family: 'Poppins', sans-serif;
+            padding: 0;
             background-color: #f0f0f0;
-            color: #333;
         }
+
         header {
-            background-color: #ffcccb;
-            padding: 20px;
+            background-image: url('https://source.unsplash.com/random/1600x900');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
             text-align: center;
         }
+
         header h1 {
-            font-size: 3em;
-            color: #fff;
+            font-size: 4rem;
+            font-weight: 500;
         }
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 1rem;
         }
-        .cat-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+
+        .content {
+            padding: 3rem;
+            background: #fff;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
         }
-        .cat-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
-            transition: transform 0.2s ease;
-        }
-        .cat-card:hover {
-            transform: scale(1.05);
-        }
-        .cat-card img {
+
+        .content img {
             width: 100%;
             height: auto;
+            border-radius: 8px;
+            margin-top: 2rem;
         }
-        .cat-card h2 {
-            padding: 15px;
-            font-size: 1.5em;
-            color: #ff6347;
-        }
-        .cat-card p {
-            padding: 0 15px 15px;
-            line-height: 1.6;
-        }
+
         footer {
-            background-color: #ffcccb;
-            padding: 10px;
             text-align: center;
-            margin-top: 40px;
+            padding: 2rem;
+            background: #333;
             color: #fff;
+            margin-top: 3rem;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Cute Cats Gallery</h1>
-    </header>
-    <main>
-        <div class="cat-container">
-            <div class="cat-card">
-                <img src="https://loremflickr.com/300/200/cat" alt="A cute kitten">
-                <h2>Fluffy</h2>
-                <p>This little kitty loves chasing butterflies and sleeping in the sun all day.</p>
-            </div>
-            <div class="cat-card">
-                <img src="https://loremflickr.com/300/200/cat" alt="A cute kitten">
-                <h2>Mittens</h2>
-                <p>Mittens enjoys playing with yarn and has a soft purr that can melt your heart.</p>
-            </div>
-            <div class="cat-card">
-                <img src="https://loremflickr.com/300/200/cat" alt="A cute kitten">
-                <h2>Whiskers</h2>
-                <p>Whiskers is an adventurous cat that loves exploring the great outdoors.</p>
-            </div>
+        <div>
+            <h1>Welcome to Our Beautiful Website</h1>
+            <p>Experience creativity and inspiration in one page.</p>
         </div>
-    </main>
+    </header>
+
+    <section class="content">
+        <h2>Explore the Beauty</h2>
+        <p>We believe in providing an aesthetic experience that appeals to everyone. Every picture here is generated
+            freely, sourced for your enjoyment.</p>
+        <img src="https://source.unsplash.com/featured/800x400/?nature" alt="Random Nature Image">
+        <p>Our goal is to make the world beautiful and simple. Dive in to explore more stunning imagery and discover what
+            brings inspiration to your day.</p>
+    </section>
+
     <footer>
-        &copy; 2024 Cute Cats. All rights reserved.
+        <p>&copy; 2024 Beautiful Website | <a href="https://www.example.com/privacy-policy" target="_blank" style="color: #fff; text-decoration: none;">Privacy Policy</a></p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Welcome to our beautiful website!");
+        });
+    </script>
 </body>
+
 </html>
